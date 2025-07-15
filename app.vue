@@ -322,17 +322,17 @@ export default {
         {
           src: "https://www.youtube.com/embed/c5rvpCA0zfQ?si=xTg_DY16qrvH3lPg&loading=lazy",
           title: "CryAvionet - Broken",
-          thumbnail: "/assets/videoimg.png"
+          thumbnail: "/cryavionet.githug.io/assets/videoimg.png"
         },
         {
           src: "https://www.youtube.com/embed/8nqQ6wPW7vk?si=8nqQ6wPW7vk&loading=lazy",
           title: "CryAvionet - Creéme",
-          thumbnail: "/assets/videoimg.png"
+          thumbnail: "/cryavionet.githug.io/assets/videoimg.png"
         },
         {
           src: "https://www.youtube.com/embed/xcrLuihSNZM?si=xcrLuihSNZM&loading=lazy",
           title: "CryAvionet - Album Demo",
-          thumbnail: "/assets/videoimg.png"
+          thumbnail: "/cryavionet.githug.io/assets/videoimg.png"
         }
       ]
     }
@@ -385,7 +385,7 @@ export default {
       img.onerror = () => {
         console.log('⚠️ Error cargando imagen de fondo, usando gradiente');
       };
-      img.src = '/assets/videoimg.png';
+      img.src = '/cryavionet.githug.io/assets/videoimg.png';
     },
     nextVideo() {
       this.currentVideo = (this.currentVideo + 1) % this.videos.length;
@@ -422,7 +422,7 @@ export default {
 /* Cuando la imagen se carga, se aplica con transición suave */
 .fondo.fondo-loaded {
   background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
-    url("/assets/videoimg.png");
+    url("/cryavionet.githug.io/assets/videoimg.png");
   background-size: cover; /* Volver a cover para que llene toda la pantalla */
   background-position: center;
   background-repeat: no-repeat;

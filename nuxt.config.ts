@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     head: {
       // Precargar recursos críticos
       link: [
-        { rel: 'preload', href: '/assets/videoimg.png', as: 'image' },
+        { rel: 'preload', href: '/cryavionet.githug.io/assets/videoimg.png', as: 'image' },
         { rel: 'dns-prefetch', href: 'https://www.youtube.com' },
         { rel: 'dns-prefetch', href: 'https://www.googletagmanager.com' }
       ],
