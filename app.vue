@@ -422,7 +422,7 @@ export default {
 /* Cuando la imagen se carga, se aplica con transición suave */
 .fondo.fondo-loaded {
   background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
-    url("/assets/videoimg.png");
+    url("https://jaredsoftware.github.io/cryavionet.githug.io/assets/videoimg.png");
   background-size: cover; /* Volver a cover para que llene toda la pantalla */
   background-position: center;
   background-repeat: no-repeat;
