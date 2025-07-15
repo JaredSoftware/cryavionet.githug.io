@@ -7,12 +7,17 @@
     "dev": "npm run css-build && nuxt dev",
     "generate": "npm run css-build && nuxt generate",
     "preview": "npm run css-build && nuxt preview",
-    "postinstall": "npm run css-build && nuxt prepare"
+    "postinstall": "npm run css-build && nuxt prepare",
+    "optimize": "node optimize-image.js"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "bulma": "^0.9.4",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "node-sass": "^9.0.0",
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.7.1",
+    "sass-embedded": "^1.89.2"
   }
 }
