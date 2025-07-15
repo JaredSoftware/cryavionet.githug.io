@@ -12,8 +12,9 @@ export default defineNuxtConfig({
   // Configuración de renderizado
   ssr: true,
   
-  // Optimización de carga
+  // Configuración para GitHub Pages
   app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/cryavionet.githug.io/' : '/',
     head: {
       // Precargar recursos críticos
       link: [
@@ -31,5 +32,10 @@ export default defineNuxtConfig({
   },
   
   // Configuración de desarrollo
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  
+  // Configuración de build
+  build: {
+    transpile: ['node-sass']
+  }
 })

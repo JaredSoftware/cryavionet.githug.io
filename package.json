@@ -19,5 +19,13 @@
     "node-sass": "^9.0.0",
     "nuxt": "^3.7.1",
     "sass-embedded": "^1.89.2"
+  },
+  "overrides": {
+    "node-sass": {
+      "sass": "^1.69.0"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
