@@ -6,6 +6,17 @@ on:
   pull_request:
     branches: [ main ]
 
+# Permisos necesarios para el deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Configuración de concurrencia para evitar conflictos
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
